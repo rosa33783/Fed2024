@@ -1,0 +1,77 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-background:#eee;
+	--standard: rgb(247, 75, 27);
+    --white: rgb(255, 255, 255);
+	--black: rgb(0, 0, 0);
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+h1{
+	display:none;
+}
+
+body {
+	/* cursor werkt niet*/
+	cursor: url(/images/pijltjes_new_website_tnc_26_1_2.png), auto;
+	font-family: "Schoolbell", cursive;
+	font-style: normal;
+	color: var(--standard);
+}
+
+nav a{
+	color: var(--standard);
+	text-decoration: none;
+	list-style-type: none;
+}
+
+nav li{
+	list-style-type: none;
+	font-size: 1em;
+	text-transform: uppercase;  
+}
+
+nav ul{
+	line-height: 3em;
+}
+
+nav button {
+	background: none;
+	border:none;
+	color:var(--standard);
+	font-family: "Schoolbell", cursive;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 1.6em;
+}
+
+nav ul ul a{
+	display: none;
+	z-index: 1;
+}
+
+.show{
+	display:block;
+}
+
+/*source: google fonts*/  
