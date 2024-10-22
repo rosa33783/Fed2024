@@ -1,0 +1,198 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-background:#eee;
+	--standard: rgb(247, 75, 27);
+    --white: rgb(255, 255, 255);
+	--black: rgb(0, 0, 0);
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+h1{
+	display:none;
+}
+
+* {
+	cursor: url('../images/pijltjes_new_website_tnc_26_1_2.png'), auto;
+	/* cursor werkt niet*/
+}
+
+body {
+	/*verander naar @fontface*/
+	font-family: "Schoolbell", sans-serif;
+	/*source: google fonts*/  
+	color: var(--standard);
+	text-transform: uppercase; 
+
+}
+
+a {
+	color: var(--standard);
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+header section{
+	display:flex;
+	justify-content:flex-end;
+	border-bottom:solid 0.09em;
+	border-color: var(--standard);
+	background-color: var(--white);
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	z-index: 1000;
+}
+
+
+header section a:nth-of-type(1){
+	margin-right:auto;
+	display: flex;
+	align-items: center;
+	margin-left:1em;
+}
+
+
+nav li { 
+	list-style-type: none;
+	font-size: 1em; 
+	border-top:solid 0.09em;
+	border-color: var(--standard);
+	padding-left:4em;
+	width:auto;
+
+}
+
+ul details{
+	padding-left:4em;
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul section li {
+	border:none;
+}
+
+nav ul{
+	line-height: 3em;
+
+}
+
+nav button {
+	background: none;
+	border:none;
+	color:var(--standard);
+	font-family: "Schoolbell", cursive;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 1.6em;
+}
+
+nav ul ul a{
+	display: none;
+	z-index: 1;
+}
+
+header > button {
+	order:-1;
+  }
+  
+header button:nth-of-type(1){
+	border:none;
+	background-color: none;
+}
+  
+  
+
+  /* SLUIT BUTTON */
+
+  nav button {
+
+   justify-self:end;
+   padding-right:0.5em;
+   
+  }
+  
+
+  /* HET MENU */
+
+  nav {
+	padding:1em;
+	background-color: var(--white);
+	border-right:solid 0.09em;
+	border-color: var(--standard);
+	display:grid;
+	align-content:start;
+	gap:1em;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	translate:-100%;
+	transition:0.3s;
+  }
+  
+ 
+  nav.toonMenu {
+	translate:-10%;
+	padding:0;
+	
+  }
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul a{
+    list-style: none;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+footer section:nth-of-type(2) section {
+	margin-bottom: 4em;
+	/* mag dit? */
+}
+
+footer form {
+	color:var(--white);
+	background: var(--standard);
+	display: flex;
+	flex-direction: column;
+}
+
+::placeholder{
+	font-family: "Schoolbell", sans-serif;
+	background-color: var(--standard);
+	color:var(--white);
+	text-transform: uppercase; 
+	font-size:1em; 
+}
+
+footer input{
+	border:none;
+}
